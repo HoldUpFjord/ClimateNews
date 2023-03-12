@@ -5,12 +5,13 @@ import { siteConfig } from "@/config/site"
 import { Layout } from "@/components/layout"
 import { buttonVariants } from "@/components/ui/button"
 import { NewsFeed } from "@/components/news-feed"
+import { TailwindIndicator } from "@/components/tailwind-indicator"
 
 export default function IndexPage() {
   return (
     <Layout>
       <Head>
-        <title>Next.js</title>
+        <title>Your Climate Update</title>
         <meta
           name="description"
           content="Next.js template for building apps with Radix UI and Tailwind CSS"
@@ -18,15 +19,17 @@ export default function IndexPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div>
+      <TailwindIndicator></TailwindIndicator>
+      </div>
       <section className="container grid items-center gap-6 pt-6 pb-8 md:py-10">
         <div className="flex max-w-[980px] flex-col items-start gap-2">
           <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
-            Beautifully designed components <br className="hidden sm:inline" />
-            built with Radix UI and Tailwind CSS.
+            Your source for the latest news in <br className="hidden sm:inline" />
+             Climate.
           </h1>
           <p className="max-w-[700px] text-lg text-slate-700 dark:text-slate-400 sm:text-xl">
-            Accessible and customizable components that you can copy and paste
-            into your apps. Free. Open Source. And Next.js 13 Ready.
+            An ongoing project to provide a tasteful and accesible news experience to those interested in the Climate Crisis.
           </p>
         </div>
         <div className="flex gap-4">
@@ -51,6 +54,7 @@ export default function IndexPage() {
       <section>
       <NewsFeed></NewsFeed>
       </section>
+    
     </Layout>
   )
 }
