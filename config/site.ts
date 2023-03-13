@@ -12,9 +12,9 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Next.js",
+  name: "The Climate Update",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Your source for the latest news and updates involving Climate Change.",
   mainNav: [
     {
       title: "Home",
