@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Separator } from "@/components/ui/separator"
+import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 
  
@@ -29,7 +30,7 @@ export function NewsFeed () {
   };
  useEffect(() => {
   // fetch('https://climate-news-feed.p.rapidapi.com/?source=Nasa%20Climate&limit=50&exclude=The%20Guardian', options)
-  fetch('https://climate-news-feed.p.rapidapi.com/page/2?limit=10', options)
+  fetch('https://climate-news-feed.p.rapidapi.com/page/1?limit=10', options)
   // .then(response => response.json())
   .then(response => response.json())
   .then(response => setData({articles : response.articles}))
@@ -47,25 +48,35 @@ export function NewsFeed () {
     return (
       <div className='newsFeed'>
         {data.articles && 
-            (<div className='max-w-50 flex flex-col items-center'>
+            (<div className=' max-w-20 mx-5 flex flex-col items-center md:max-w-50 md:mx-5 flex flex-col items-center xl:grid xl:grid-cols-2'>
                 {data.articles.map(child => (
                   <div className='my-10' key={child.title}>
-                    <div className="space-y-1">
-                    <h4 className="text-sm font-medium leading-none">{child.source}</h4>
-                    <p className="text-sm text-slate-500 dark:text-slate-400">
-                        {child.title}
-                    </p>
+                   <div className='flex'>
+                    
+                    <div className='mr-5'>
+                         <img className='max-w-md'src={child.thumbnail}></img>
                     </div>
-                    <Separator className="my-4" />
-                    <div className="flex h-5 items-center space-x-4 text-sm">
-                        {/* Slices the raw date data to a readable format */}
-                    <div>{child.published.slice(0,10 )}</div>
-                    <Separator orientation="vertical" />
-                    {/* <a href={child.url}><img src={child.thumbnail}></img></a> */}
-                    <div> Test </div>
-                    <Separator orientation="vertical" />
-                    {/* <div>{child.url}</div> */}
-                    <p>Test</p>
+                      <div className='flex-col'>
+                        <div className="space-y-1">
+                            <h4 className="text-md font-medium leading-none">{child.source}</h4>
+                            <a href={child.url}>
+                                <p className="text-md text-slate-500 dark:text-slate-400 max-w-sm min-w-full">
+                                {child.title}
+                                </p>
+                            </a>
+                            </div>
+                            <Separator className="my-4" />
+                            <div className="flex h-5 items-center space-x-4 text-sm">
+                                {/* Slices the raw date data to a readable format */}
+                            <div>{child.published.slice(0,10 )}</div>
+                            <Separator orientation="vertical" />
+                            {/* <a href={child.url}><img src={child.thumbnail}></img></a> */}
+                            <div> Test </div>
+                            <Separator orientation="vertical" />
+                            {/* <div>{child.url}</div> */}
+                            <p>Test</p>
+                        </div>
+                      </div>
                   </div>
             </div>
         ))}
