@@ -41,7 +41,7 @@ export function FeedFilter() {
             </MenubarSubContent> 
           </MenubarSub> */}
            <MenubarItem>
-            Carbon Bried <MenubarShortcut>⌘N</MenubarShortcut>
+            Carbon Brief <MenubarShortcut>⌘N</MenubarShortcut>
           </MenubarItem>
           <MenubarSeparator />
          
