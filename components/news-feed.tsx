@@ -29,7 +29,7 @@ export function NewsFeed () {
   };
  useEffect(() => {
   // fetch('https://climate-news-feed.p.rapidapi.com/?source=Nasa%20Climate&limit=50&exclude=The%20Guardian', options)
-  fetch('https://climate-news-feed.p.rapidapi.com/page/1?limit=10', options)
+  fetch('https://climate-news-feed.p.rapidapi.com/page/2?limit=10', options)
   // .then(response => response.json())
   .then(response => response.json())
   .then(response => setData({articles : response.articles}))
@@ -58,7 +58,8 @@ export function NewsFeed () {
                     </div>
                     <Separator className="my-4" />
                     <div className="flex h-5 items-center space-x-4 text-sm">
-                    <div>Welcome</div>
+                        {/* Slices the raw date data to a readable format */}
+                    <div>{child.published.slice(0,10 )}</div>
                     <Separator orientation="vertical" />
                     {/* <a href={child.url}><img src={child.thumbnail}></img></a> */}
                     <div> Test </div>
