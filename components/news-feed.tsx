@@ -44,32 +44,12 @@ export function NewsFeed () {
     return <p>Loading...</p>
   }
  
-
-//   return (
-//     <div className="newsFeed">
-  
-//         {data.articles && 
-//             (<div className='flex flex-col justify-center'>
-//             {data.articles.map(child => (
-//             <div  key={child.title}>
-//                 <p className='text-3xl font-bold underline w-auto'>{child.title}</p>
-//                 <p>{child.source}</p>
-//                 <p>{child.thumbnail}</p>
-//                 <a href={child.url}><img src={child.thumbnail}></img></a>
-//             </div>
-//             ))}
-//             </div>)} 
-//      </div>
-//   )
-
-
-
     return (
       <div className='newsFeed'>
         {data.articles && 
-            (<div>
+            (<div className='max-w-50 flex flex-col items-center'>
                 {data.articles.map(child => (
-                  <div  key={child.title}>
+                  <div className='my-10' key={child.title}>
                     <div className="space-y-1">
                     <h4 className="text-sm font-medium leading-none">{child.source}</h4>
                     <p className="text-sm text-slate-500 dark:text-slate-400">
@@ -78,11 +58,13 @@ export function NewsFeed () {
                     </div>
                     <Separator className="my-4" />
                     <div className="flex h-5 items-center space-x-4 text-sm">
-                    <div>{child.url}</div>
+                    <div>Welcome</div>
                     <Separator orientation="vertical" />
-                    <div>{child.thumbnail}</div>
+                    {/* <a href={child.url}><img src={child.thumbnail}></img></a> */}
+                    <div> Test </div>
                     <Separator orientation="vertical" />
-                    <div>{child.url}</div>
+                    {/* <div>{child.url}</div> */}
+                    <p>Test</p>
                   </div>
             </div>
         ))}
