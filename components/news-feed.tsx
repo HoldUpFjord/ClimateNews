@@ -30,7 +30,7 @@ export function NewsFeed () {
   };
  useEffect(() => {
   // fetch('https://climate-news-feed.p.rapidapi.com/?source=Nasa%20Climate&limit=50&exclude=The%20Guardian', options)
-  fetch('https://climate-news-feed.p.rapidapi.com/page/1?limit=10', options)
+  fetch('https://climate-news-feed.p.rapidapi.com/page/2?limit=10', options)
   // .then(response => response.json())
   .then(response => response.json())
   .then(response => setData({articles : response.articles}))
@@ -54,7 +54,7 @@ export function NewsFeed () {
                    <div className='flex flex-col md:flex-row   '>
                     
                     <div className='mb-2 md:mr-5'>
-                         <img className='max-w-md'src={child.thumbnail}></img>
+                         <img className='max-w-md w-80 h-60'src={child.thumbnail}></img>
                     </div>
                       <div className='flex-col'>
                         <div className="space-y-1">
