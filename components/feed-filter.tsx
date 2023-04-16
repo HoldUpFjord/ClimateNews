@@ -15,6 +15,8 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar"
+
+
  
 export function FeedFilter() {
   return (
@@ -49,16 +51,22 @@ export function FeedFilter() {
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>Edit</MenubarTrigger>
+        <MenubarTrigger>Amount of articles</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>
-            Undo <MenubarShortcut>⌘Z</MenubarShortcut>
+            10 <MenubarShortcut>⌘Z</MenubarShortcut>
           </MenubarItem>
           <MenubarItem>
-            Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+            20 <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+          </MenubarItem>
+          <MenubarItem>
+            30 <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+          </MenubarItem>
+          <MenubarItem>
+            40 <MenubarShortcut>⇧⌘Z</MenubarShortcut>
           </MenubarItem>
           <MenubarSeparator />
-          <MenubarSub>
+          {/* <MenubarSub>
             <MenubarSubTrigger>Find</MenubarSubTrigger>
             <MenubarSubContent>
               <MenubarItem>Search the web</MenubarItem>
@@ -71,10 +79,10 @@ export function FeedFilter() {
           <MenubarSeparator />
           <MenubarItem>Cut</MenubarItem>
           <MenubarItem>Copy</MenubarItem>
-          <MenubarItem>Paste</MenubarItem>
+          <MenubarItem>Paste</MenubarItem> */}
         </MenubarContent>
       </MenubarMenu>
-      <MenubarMenu>
+      {/* <MenubarMenu>
         <MenubarTrigger>View</MenubarTrigger>
         <MenubarContent>
           <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>
@@ -106,8 +114,8 @@ export function FeedFilter() {
           <MenubarItem inset>Edit...</MenubarItem>
           <MenubarSeparator />
           <MenubarItem inset>Add Profile...</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
+        </MenubarContent> */}
+      {/* </MenubarMenu> */}
     </Menubar>
   )
 }
