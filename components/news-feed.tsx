@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Separator } from "@/components/ui/separator"
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+
 
 
  
