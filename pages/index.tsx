@@ -6,6 +6,7 @@ import { Layout } from "@/components/layout"
 import { buttonVariants } from "@/components/ui/button"
 import { NewsFeed } from "@/components/news-feed"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { FeedFilter } from "@/components/feed-filter"
 
 export default function IndexPage() {
   return (
@@ -33,7 +34,8 @@ export default function IndexPage() {
           </p>
         </div>
         <div className="flex gap-4">
-          <Link
+          <FeedFilter></FeedFilter>
+          {/* <Link
             href={siteConfig.links.docs}
             target="_blank"
             rel="noreferrer"
@@ -48,7 +50,7 @@ export default function IndexPage() {
             className={buttonVariants({ variant: "outline", size: "lg" })}
           >
             GitHub
-          </Link>
+          </Link> */}
         </div>
       </section>
       <section>
