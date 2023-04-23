@@ -54,7 +54,7 @@ export function NewsFeed () {
                    <div className='flex flex-col md:flex-row   '>
                     
                     <div className='mb-2 md:mr-5'>
-                         <img className='max-w-md w-80 h-60'src={child.thumbnail}></img>
+                         <img className='max-w-md w-72 h-52'src={child.thumbnail}></img>
                     </div>
                       <div className='flex-col'>
                         <div className="space-y-1">
