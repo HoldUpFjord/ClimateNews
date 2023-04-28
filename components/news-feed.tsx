@@ -71,10 +71,8 @@ export function NewsFeed () {
                             <div>{child.published.slice(0,10 )}</div>
                             <Separator orientation="vertical" />
                             {/* <a href={child.url}><img src={child.thumbnail}></img></a> */}
-                            <div> Test </div>
-                            <Separator orientation="vertical" />
-                            {/* <div>{child.url}</div> */}
-                            <p>Test</p>
+                            
+                           
                         </div>
                       </div>
                   </div>
