@@ -50,7 +50,7 @@ export function NewsFeed () {
         {data.articles && 
             (<div className=' max-w-20 mx-5 flex flex-col items-center md:max-w-50 md:mx-5 flex flex-col items-center xl:grid xl:grid-cols-2'>
                 {data.articles.map(child => (
-                  <div className='my-10' key={child.title}>
+                  <div className='my-10 ml-10' key={child.title}>
                    <div className='flex flex-col md:flex-row   '>
                     
                     <div className='mb-2 md:mr-5'>
