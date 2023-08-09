@@ -30,7 +30,7 @@ export function NewsFeed () {
   };
  useEffect(() => {
   // fetch('https://climate-news-feed.p.rapidapi.com/?source=Nasa%20Climate&limit=50&exclude=The%20Guardian', options)
-  fetch('https://climate-news-feed.p.rapidapi.com/page/2?limit=10', options)
+  fetch('https://climate-news-feed.p.rapidapi.com', options)
   // .then(response => response.json())
   .then(response => response.json())
   .then(response => setData({articles : response.articles}))
