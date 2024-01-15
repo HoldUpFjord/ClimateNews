@@ -7,10 +7,9 @@ This project was an undertaking in understanding how the new next.js app router 
 
 **Tech used:** Next13, ShadCn, RadixUI, TailwindCSS, ClimateNews API
 
-The project is forked from a branch of Shadcn(https://ui.shadcn.com/). It was 
+The project is forked from a branch of Shadcn(https://ui.shadcn.com/). Using a pre-existing repo allowed me to comb-through and explore how an application in this stack should be structured. Particularly regarding frontend components.
 
 ## Optimizations
-*(optional)*
 
 This project was halted before I could fully manifest what I had envisoned. My initial next steps would be to implement a way to filter article results by publication as well as the amount of artcicles. Implementing a page feature using pagaination would also be a nice to have. 
 
