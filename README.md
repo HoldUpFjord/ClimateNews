@@ -11,7 +11,7 @@ The project is forked from a branch of Shadcn(https://ui.shadcn.com/). Using a p
 
 ## Optimizations
 
-This project was halted before I could fully manifest what I had envisoned. My initial next steps would be to implement a way to filter article results by publication as well as the amount of artcicles. Implementing a page feature using pagaination would also be a nice to have. 
+This project was halted before I could fully manifest what I had envisoned. My initial next steps would be to implement a way to filter article results by publication as well as the amount of articles. Implementing a page feature using pagaination would also be a nice to have. 
 
 A current pain point in the app is that the current api returns image links that are not publically available. Building out a method of targetting, and then removing, these links would be a major improvement. 
 
