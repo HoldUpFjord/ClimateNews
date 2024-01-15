@@ -1,4 +1,4 @@
-# My Awesome Project
+# Climate Update
 This project was an undertaking in understanding how the new next.js app router works in regards to receiving api data. I also used this opportunity to get a deeper understanding of a new component library: Shadcn, and how it leverages RadixUI under the hood for easy and accesible frontend components. 
 **Link to project:** https://the-climate-update.vercel.app/
 ![alt tag]([https://the-climate-update.vercel.app/](https://the-climate-update.vercel.app/))
